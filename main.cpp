@@ -1,6 +1,12 @@
+#ifdef _WIN32
+//Windows includes
 #include "curses.h"
 #include "panel.h"
 #include "curspriv.h"
+#else
+//Linux / MacOS includes
+#include <curses.h>
+#endif
 #include <string>
 #include <sstream>
 
